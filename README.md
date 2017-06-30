@@ -24,9 +24,11 @@
 ```js
   <com-upload-qiniu :visible="uploadBoxVisible" @close="closeUploadBox">
         <h3 slot="header">
-            测试标题
+            上传测试
         </h3>
     </com-upload-qiniu>
 ```
+上传组件实例：
+![upload.jpg](http://gitpages-1251551899.picgz.myqcloud.com/upload.jpg)
 
 更多的开发过程可以在我个人博客上查看 [博客](https://flyontheair.github.io/2017/06/30/vue-qiniu-jssdk/)。

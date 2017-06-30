@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d31cfa59-fc81-44ea-be63-07ca20fcaf52" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="Upload.iws" />
@@ -43,8 +42,8 @@
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.8772348">
-                <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <first_editor vertical-scroll-proportion="0.8498212">
+                <caret line="31" column="71" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -786,7 +785,7 @@
       <option name="number" value="Default" />
       <updated>1498791809307</updated>
       <workItem from="1498791812698" duration="8075000" />
-      <workItem from="1498806271744" duration="826000" />
+      <workItem from="1498806271744" duration="1036000" />
     </task>
     <task id="LOCAL-00001" summary="add md">
       <created>1498806899478</created>
@@ -798,7 +797,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8901000" />
+    <option name="totallyTimeSpent" value="9111000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -969,8 +968,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.8772348">
-            <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <first_editor vertical-scroll-proportion="0.8498212">
+            <caret line="31" column="71" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
             <folding />
           </first_editor>
           <second_editor />
