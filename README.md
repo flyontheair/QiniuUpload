@@ -28,7 +28,8 @@
         </h3>
     </com-upload-qiniu>
 ```
-上传组件实例：
+上传组件示例：
+![upload.jpg](http://gitpages-1251551899.picgz.myqcloud.com/qiniu1.JPG)
 ![upload.jpg](http://gitpages-1251551899.picgz.myqcloud.com/upload.jpg)
 
 更多的开发过程可以在我个人博客上查看 [博客](https://flyontheair.github.io/2017/06/30/vue-qiniu-jssdk/)。

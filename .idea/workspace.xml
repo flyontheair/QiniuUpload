@@ -43,7 +43,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
               <first_editor vertical-scroll-proportion="0.8498212">
-                <caret line="31" column="71" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
+                <caret line="31" column="70" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -785,7 +785,7 @@
       <option name="number" value="Default" />
       <updated>1498791809307</updated>
       <workItem from="1498791812698" duration="8075000" />
-      <workItem from="1498806271744" duration="1036000" />
+      <workItem from="1498806271744" duration="1208000" />
     </task>
     <task id="LOCAL-00001" summary="add md">
       <created>1498806899478</created>
@@ -797,7 +797,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9111000" />
+    <option name="totallyTimeSpent" value="9283000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -969,7 +969,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor vertical-scroll-proportion="0.8498212">
-            <caret line="31" column="71" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
+            <caret line="31" column="70" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
             <folding />
           </first_editor>
           <second_editor />
