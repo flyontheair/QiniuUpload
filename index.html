@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>七牛上传实践</title>
+    <link rel="stylesheet" href="./element-ui/lib/theme-default/index.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./component/uploadQiniu/index.css">
+</head>
+<body>
+
+<div id="app">
+    <el-button type="primary" @click="uploadBoxVisible=true">上传</el-button>
+    <com-upload-qiniu :visible="uploadBoxVisible" @close="closeUploadBox">
+        <h3 slot="header">
+            {{title}}
+        </h3>
+    </com-upload-qiniu>
+
+</div>
+
+<script src="./js/es5-shim.min.js"></script>
+<script src="./js/es6-shim.min.js"></script>
+<script src="./js/vue-2.2.6.min.js"></script>
+<script src="./js/jquery-1.12.4.js"></script>
+<script src="./element-ui/lib/index.js"></script>
+<script src="./js/page/index.js"></script>
+
+
+<!--调试换-->
+<!--<script src="./uploadQiniu/moxie.js"></script>
+<script src="./uploadQiniu/m.qiniu.js"></script>
+<script src="./uploadQiniu/plupload.dev.js"></script>-->
+<script src="./component/uploadQiniu/plupload.full.min.js"></script>
+<script src="./component/uploadQiniu/m.qiniu.min.js"></script>
+
+<script src="./component/uploadQiniu/index.js"></script>
+</body>
+</html>

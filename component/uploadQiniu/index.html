@@ -1,0 +1,51 @@
+<el-dialog class="com-upload-box" :title="title" v-model="privateVisible" :close-on-click-modal="false"
+           :close-on-press-escape="false" @open="open" @close="close">
+    <div class="box-header">
+        <slot name="header"></slot>
+    </div>
+    <div class="box-body">
+        <div v-show="!files || files.length==0" class="upload-box">
+            <div class="file-box text-center" id="container">
+                <div class="btn btn-primary file-picker" id="pickfiles" ref="filesAdd">点击选择文件</div>
+                <p class="text-muted">或将文件拖到这里（单次可上传200MB）</p>
+            </div>
+        </div>
+        <div v-show="files && files.length>0" class="progress-box">
+            <table class="progress-list">
+                <tbody>
+                <tr v-for="item in files" :id="'file-'+item.id" :key="item.id">
+                    <td class="name">{{item.name}}</td>
+                    <td class="size">{{'('+Math.floor(item.speed/1024)+'KB/s / '+item.sizeStr+')'}}</td>
+                    <td class="progress-cell">
+                        <div class="progress">
+                            <div :class="['progress-bar',error[item.id] ? 'progress-bar-danger' : '']"
+                                 :style="{width: (progress[item.id] || 0)+'%'}"></div>
+                        </div>
+                    </td>
+                    <td class="action">
+                        <a v-show="progress[item.id]!=100" href="javascript:void(0)" @click="cancelFile(item)">取消</a>
+                        <el-tooltip placement="left">
+                            <div slot="content" v-html="error[item.id]"></div>
+                            <el-button type="danger" size="mini" icon="warning" v-show="error[item.id]"></el-button>
+                        </el-tooltip>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="action-bar">
+                <el-row>
+                    <el-col :span="12">
+                        <p>
+                            一共{{fileTotalCount}}个文件，{{fileTotalSize}}MB
+                        </p>
+                    </el-col>
+                    <el-col :span="12" style="text-align: right;">
+                        <el-button :disabled="uploadCompleted"  @click="cancelAll">全部取消</el-button>
+                        <el-button type="primary" @click="addFile">继续添加</el-button>
+                    </el-col>
+                </el-row>
+            </div>
+        </div>
+    </div>
+    </div>
+</el-dialog>
