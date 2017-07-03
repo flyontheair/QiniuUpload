@@ -150,7 +150,7 @@ Vue.component("com-upload-qiniu", function (resolve, reject) {
                     }
                 };
                 vm.uploader = Qiniu.uploader({
-                    mConfig: mConfig,
+                    mConfig: {},
                     runtimes: 'html5,flash,html4',
                     browse_button: 'pickfiles',//触发dom的id
                     container: 'container',
@@ -185,7 +185,8 @@ Vue.component("com-upload-qiniu", function (resolve, reject) {
                                 var item = files[i];
                                 var names = item.name.split('.');
                                 if (!vm.checkFile(item)) {
-                                    $.notify('warning', names[names.length - 1] + '的文件格式暂不支持上传');
+                                    //$.notify('warning', names[names.length - 1] + '的文件格式暂不支持上传');
+                                    vm.$message({message: names[names.length - 1] + '的文件格式暂不支持上传', type: 'warning'});
                                     this.removeFile(item);
                                     files.splice(i, 1);
                                     i--;
@@ -233,7 +234,8 @@ Vue.component("com-upload-qiniu", function (resolve, reject) {
                             }
                         },
                         'Error': function (up, err, errTip) {
-                            $.notify('warning', '上传错误：' + errTip);
+                            //$.notify('warning', '上传错误：' + errTip);
+                            vm.$message({message: '上传错误：' + errTip, type: 'warning'});
                         }
                         // ,
                         // 'Key': function(up, file) {
